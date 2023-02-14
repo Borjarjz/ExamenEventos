@@ -1,6 +1,7 @@
 package com.example.examen;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // Habilitar la compatibilidad de vectores
+       // AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
     }
 
 
@@ -25,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToSecondActivity(View view) {
 
-        mEmailView=(AutoCompleteTextView) findViewById(R.id.usernameEditText);
+        mEmailView= findViewById(R.id.usernameEditText);
         mPasswordView=findViewById(R.id.passwordEditText);
 
 
